@@ -259,7 +259,37 @@
   另一方面也实现对资源的复用，从而避免了不必要的创建和释放资源所带来的开销。
  
 #事务ACID和分布式CAP理论
+  ACID 
+  A atomicity 原子性
+  C consistency 一致性
+  I isolation 隔离性
+  D durability 持久性
   
-#排序查找算法
+  事务隔离：read uncommitted
+          read committed
+          repeatable read
+          serializable
+          
+  CAP
+  Consistency 、Availability 、Partition tolerance最多只能满足两项
+  放弃P：集中式
+  放弃A：网络分区故障则停用服务
+  放弃C：放弃强一致性 选择最终一致性
+  
 
+#排序查找算法
+  Sort package
 #分布式锁 zk应用
+  http://blog.csdn.net/youmengdaigu/article/details/44134233
+  分布式锁的实现 自己也写了一个 但是没有解决网络故障引起的死锁 在帖子里有解决方案
+
+  
+#redis 缓存原理
+
+#读写分离 分库分表 数据库集群
+
+#JMS规范 点对点/发布订阅 MQ kafka
+
+#多线程 线程池 NIO 
+
+#nginx 负载均衡
